@@ -65,6 +65,7 @@ const ASSETS = [
     "./Imagenes/Guia/guia17.png",
     "./Imagenes/Guia/guia18.png",
 
+    "./JavaScript/RandomPublicidad.js",
     "./JavaScript/LocalStorage.js",
     "./JavaScript/RedirectHTTPS.js",
     "./JavaScript/RegistroServiceWorker.js",
