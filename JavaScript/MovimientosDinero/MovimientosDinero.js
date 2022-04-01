@@ -47,6 +47,6 @@ function actualizarVistaCantidadesInicio(){
     let vistaMyCash = document.getElementById('MyCashId');
     vistaMyTotal.innerHTML = totalDinero;
     vistaMyRemaining.innerHTML = totalRemaining;
-    vistaMySafeSpendForToday.innerHTML = Number(totalRemaining / calculaDiasRestantesParaQuincena()).toFixed(2)//calculaDiasRestantesParaQuincena() está en MovimientosListas.js
+    vistaMySafeSpendForToday.innerHTML = Number(totalRemaining / calculaDiasRestantesParaQuincena()).toFixed(2);//calculaDiasRestantesParaQuincena() está en MovimientosListas.js
     vistaMyCash.value = myCash;
 }

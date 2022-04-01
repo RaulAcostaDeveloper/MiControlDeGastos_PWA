@@ -29,7 +29,7 @@
     ,pagos,plantilla excel control de gastos,presupuesto,produccion,producción,productivo,publicidad,que es aplicación,que es aplicación web
     ,que es dinero,quincena,quincenas,resultados,secciones,seguridad,seguro,sitio web,soporte de ios,tarjeta de debito,tarjetas">
     <meta name="description" content="Esta aplicacion web esta hecha para ayudarte a tener un control avanzado de dinero, manejar mas eficientemente tus ingresos. Ingresa cantidades para hacer calculos instantaneos y ayudarte a manejar el flujo del dinero efectivo.">
-    <title>Mi Control de Gastos</title>
+    <title>Mi Control de Gastos.com</title>
     <link rel="shortcut icon" href="./Imagenes/Iconos/maskable_icon_x128.ico">
     <!-- Estilos -->
     <link rel="stylesheet" href="./Css/global.css">
@@ -74,7 +74,7 @@
 
 <body>
 
-    <header onclick="copyToClipBoard('https://micontroldegastos.com')" title="Copy https://micontroldegastos.com">
+    <header onclick="copyToClipBoard('https://mynotecoin.com')" title="Copy https://mynotecoin.com">
         <h1>Mi Control De Gastos</h1>
     </header>
 
@@ -87,6 +87,7 @@
             <p>Click para iniciar</p>
         </div>
     </section>
+
     <!-- Principal -->
     <section id="Principal">
         <article id="CantidadesInicio">
@@ -597,8 +598,8 @@
         </article>
     </section>
     <!-- About (Welcome) -->
-    <section id="About">
-        <article id="Welcome">
+    <section id="About" class="About">
+        <article id="Welcome" >
             <h2>Bienvenido</h2>
             <p>Esta aplicación web está hecha para ayudarte a tener un mejor control de tu dinero.
                 Con ella podrás administrar de manera eficiente y reducir tus riesgos de pérdidas.
@@ -692,6 +693,12 @@
             <button id="BotonHome" onclick="_homeApp(); reproducirClick();"><img src="./Imagenes/Iconos/maskable_icon.png" alt="Botón de ir a la App"></button>
         </article>
     </section>
+    <a id="cambiarIdioma" title="Go to english page" href="./indexEn.html"><img src="./Imagenes/ingles.png" alt="Go to english page"></a>
+    <section class="About">
+        <article>
+            <p>¿Ocurre Algo? Envíame un mensaje. <a target="_blank" href="https://www.facebook.com/micontroldegastos/"> Click Me!</a></p>
+        </article>
+    </section>
     <div class="publicidad" id="publicidad1" style="display: none;">
         <a target="_blank" href="https://protectorincorporatehush.com/irhjc5u0vz?key=f8e4b952e3de3fbb0025cb85c171bf5d">Publicidad</a>
     </div>
@@ -702,6 +709,30 @@
         <script async="async" data-cfasync="false" src="//protectorincorporatehush.com/915cff423b7011557d43151a9844db00/invoke.js"></script>
         <div id="container-915cff423b7011557d43151a9844db00"></div>
     </div>
+    <div class="publicidad" id="publicidad4" style="display: none;">
+        <script type="text/javascript">
+            atOptions = {
+                'key' : '0b7c58843d0cb806c7114baf5a3ea8f7',
+                'format' : 'iframe',
+                'height' : 250,
+                'width' : 300,
+                'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://protectorincorporatehush.com/0b7c58843d0cb806c7114baf5a3ea8f7/invoke.js"></scr' + 'ipt>');
+        </script>
+    </div>
+    <div class="publicidad" id="publicidad5" style="display: none;">
+        <script type="text/javascript">
+            atOptions = {
+                'key' : '4bd155168b58ab886435f6d3011f3a50',
+                'format' : 'iframe',
+                'height' : 60,
+                'width' : 468,
+                'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://protectorincorporatehush.com/4bd155168b58ab886435f6d3011f3a50/invoke.js"></scr' + 'ipt>');
+        </script>
+    </div>
     <footer></footer>
     <!-- Scripts Final -->
     <script src="./JavaScript/ManejoDePantallas/ManejoDePantallas.js"></script>
@@ -710,5 +741,6 @@
     <script src="./JavaScript/Listas/MovimientosListas.js"></script>
     <script src="./JavaScript/Audio/ReproducirAudio.js"></script>
     <script src="./JavaScript/RandomPublicidad.js"></script>
+
 </body>
 </html>
