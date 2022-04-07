@@ -1,6 +1,6 @@
-console.log("https://mynotecoin.com");
+console.log("http://micontroldegastos.com/");
 
-if (window.location.host == "mynotecoin.com") {  
+if (window.location.host == "micontroldegastos.com") {  
   if (location.protocol !== 'https:') {
     console.log('Redirect to HTTPS');
     location.replace(`https:${location.href.substring(location.protocol.length)}`);

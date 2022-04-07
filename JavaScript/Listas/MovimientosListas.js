@@ -575,9 +575,9 @@ function calculaDiasRestantesParaQuincena(){
         diasRestantesQuincena = 15;
     } else if(diaDelMesActual == ultimoDiaMes) {
         diasRestantesQuincena = 15;
-    } else {
-        console.log("Error en días Restantes Quincena");
-        diasRestantesQuincena = 1;
+    }
+    if (diasRestantesQuincena < 1){
+        diasRestantesQuincena = 15;
     }
     return diasRestantesQuincena;
 }
