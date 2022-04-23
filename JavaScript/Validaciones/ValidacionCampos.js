@@ -1,6 +1,7 @@
 function valideKey(evt){
     // code is the decimal ASCII representation of the pressed key.
     // Solo aceptará que se aprieten teclas de números del 0 al 9
+    console.log('Valida');
     var code = (evt.which) ? evt.which : evt.keyCode;
     if(code==8) { // backspace.
       return true;

@@ -113,7 +113,7 @@
                 <div class="CantidadAbajo">
                     <span>$</span>
                     <!-- Ignorar este error en  onkeypress="return , porque si funciona-->
-                    <input id="MyCashId" type="number" placeholder="000" onkeypress="return valideKey(event);" oninput="validarCampoVacio('MyCashId'); actualizarMyCash();">
+                    <input id="MyCashId" type="number" placeholder="000" onkeypress="valideKey(event);" oninput="validarCampoVacio('MyCashId'); actualizarMyCash();">
                 </div>
                 <span class="DescripcionCantidad">My Cash (edit)</span>
             </div>
@@ -455,7 +455,7 @@
             </div>
             <h3>Edit A Day</h3>
             <form>
-                <input id="AmountDay" type="number" placeholder="Amount" onkeypress="return valideKey(event);">
+                <input id="AmountDay" type="number" placeholder="Amount" onkeypress="valideKey(event);">
             </form>
             <div class="Boton2">
                 <button onclick="editaElementoEnLista('EditaUnDiaDeLaSemana'); reproducirClick();">Edit Day</button>
@@ -468,7 +468,7 @@
             <h3>Add A New Expense</h3>
             <form>
                 <input id="AddAExpenseTitle" type="text" placeholder="Title Expense">
-                <input id="AddAExpenseAmount" type="number" placeholder="Amount" onkeypress=" return valideKey(event);">
+                <input id="AddAExpenseAmount" type="number" placeholder="Amount" onkeypress="valideKey(event);">
             </form>
             <div class="Boton2">
                 <button onclick="aniadirElementoALista('AniadeUnGasto'); reproducirClick();">Add New Expense</button>
@@ -481,7 +481,7 @@
             <h3>Edit A Expense</h3>
             <form>
                 <input type="text" placeholder="Title Expense">
-                <input type="number" placeholder="Amount" onkeypress="return valideKey(event);">
+                <input type="number" placeholder="Amount" onkeypress="valideKey(event);">
             </form>
             <div class="Boton2">
                 <button onclick="editaElementoEnLista('EditaUnGasto'); reproducirClick();">Edit Expense</button>
@@ -494,7 +494,7 @@
             <h3>Add A New Debit Card</h3>
             <form>
                 <input type="text" placeholder="Title Debit Card">
-                <input type="number" placeholder="Amount" onkeypress="return valideKey(event);">
+                <input type="number" placeholder="Amount" onkeypress="valideKey(event);">
             </form>
             <div class="Boton2">
                 <button onclick="aniadirElementoALista('AniadeUnaTarjeta'); reproducirClick();">Add New Debit Card</button>
@@ -507,7 +507,7 @@
             <h3>Edit A Debit Card</h3>
             <form>
                 <input type="text" placeholder="Title Debit Card">
-                <input type="number" placeholder="Amount" onkeypress="return valideKey(event);">
+                <input type="number" placeholder="Amount" onkeypress="valideKey(event);">
             </form>
             <div class="Boton2">
                 <button onclick="editaElementoEnLista('EditaUnaTarjeta'); reproducirClick();">Edit Debit Card</button>
@@ -520,7 +520,7 @@
             <h3>Add A New Debt</h3>
             <form>
                 <input type="text" placeholder="Title Debt">
-                <input type="number" placeholder="Amount" onkeypress="return valideKey(event);">
+                <input type="number" placeholder="Amount" onkeypress="valideKey(event);">
             </form>
             <div class="Boton2">
                 <button onclick="aniadirElementoALista('AniadeUnaDeuda'); reproducirClick();">Add New Debt</button>
@@ -533,7 +533,7 @@
             <h3>Edit A Debt</h3>
             <form>
                 <input type="text" placeholder="Title Debt">
-                <input type="number" placeholder="Amount" onkeypress="return valideKey(event);">
+                <input type="number" placeholder="Amount" onkeypress="valideKey(event);">
             </form>
             <div class="Boton2">
                 <button onclick="editaElementoEnLista('EditaUnaDeuda'); reproducirClick();">Edit Debt</button>
@@ -546,7 +546,7 @@
             <h3>Add A New Debtor</h3>
             <form>
                 <input type="text" placeholder="Title Debtor">
-                <input type="number" placeholder="Amount" onkeypress="return valideKey(event);">
+                <input type="number" placeholder="Amount" onkeypress="valideKey(event);">
             </form>
             <div class="Boton2">
                 <button onclick="aniadirElementoALista('AniadeUnDeudor'); reproducirClick();">Add New Debtor</button>
@@ -559,7 +559,7 @@
             <h3>Edit A Debtor</h3>
             <form>
                 <input type="text" placeholder="Title Debtor">
-                <input type="number" placeholder="Amount" onkeypress="return valideKey(event);">
+                <input type="number" placeholder="Amount" onkeypress="valideKey(event);">
             </form>
             <div class="Boton2">
                 <button onclick="editaElementoEnLista('EditaUnDeudor'); reproducirClick();">Edit Debtor</button>
@@ -572,7 +572,7 @@
             <h3>Add A New Pending</h3>
             <form>
                 <input type="text" placeholder="Title Pending">
-                <input type="number" placeholder="Amount" onkeypress="return valideKey(event);">
+                <input type="number" placeholder="Amount" onkeypress="valideKey(event);">
             </form>
             <div class="Boton2">
                 <button onclick="aniadirElementoALista('AniadeUnPendiente'); reproducirClick();">Add New Pending</button>
@@ -585,7 +585,7 @@
             <h3>Edit A Pending</h3>
             <form>
                 <input type="text" placeholder="Title Pending">
-                <input type="number" placeholder="Amount" onkeypress="return valideKey(event);">
+                <input type="number" placeholder="Amount" onkeypress="valideKey(event);">
             </form>
             <div class="Boton2">
                 <button onclick="editaElementoEnLista('EditaUnPendiente'); reproducirClick();">Edit Pending</button>

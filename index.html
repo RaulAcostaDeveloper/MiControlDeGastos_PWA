@@ -118,7 +118,7 @@
                 <div class="CantidadAbajo">
                     <span>$</span>
                     <!-- Ignorar este error en  onkeypress="return , porque si funciona-->
-                    <input id="MyCashId" type="number" placeholder="000" onkeypress="return valideKey(event);" oninput="validarCampoVacio('MyCashId'); actualizarMyCash();">
+                    <input id="MyCashId" type="number" placeholder="000" onkeypress="valideKey(event);" oninput="validarCampoVacio('MyCashId'); actualizarMyCash();">
                 </div>
                 <span class="DescripcionCantidad">Mi efectivo (editar)</span>
             </div>
@@ -460,7 +460,7 @@
             </div>
             <h3>Editar un día de la semana</h3>
             <form>
-                <input id="AmountDay" type="number" placeholder="Cantidad" onkeypress="return valideKey(event);">
+                <input id="AmountDay" type="number" placeholder="Cantidad" onkeypress="valideKey(event);">
             </form>
             <div class="Boton2">
                 <button onclick="editaElementoEnLista('EditaUnDiaDeLaSemana'); reproducirClick();">Editar día</button>
@@ -473,7 +473,7 @@
             <h3>Añadir nuevo gasto</h3>
             <form>
                 <input id="AddAExpenseTitle" type="text" placeholder="Título gasto">
-                <input id="AddAExpenseAmount" type="number" placeholder="Cantidad" onkeypress=" return valideKey(event);">
+                <input id="AddAExpenseAmount" type="number" placeholder="Cantidad" onkeypress="valideKey(event);">
             </form>
             <div class="Boton2">
                 <button onclick="aniadirElementoALista('AniadeUnGasto'); reproducirClick();">Añadir gasto</button>
@@ -486,7 +486,7 @@
             <h3>Editar un gasto</h3>
             <form>
                 <input type="text" placeholder="Título gasto">
-                <input type="number" placeholder="cantidad" onkeypress="return valideKey(event);">
+                <input type="number" placeholder="cantidad" onkeypress="valideKey(event);">
             </form>
             <div class="Boton2">
                 <button onclick="editaElementoEnLista('EditaUnGasto'); reproducirClick();">Editar gasto</button>
@@ -499,7 +499,7 @@
             <h3>Añadir una tarjeta de débito</h3>
             <form>
                 <input type="text" placeholder="Título tarjeta de débito">
-                <input type="number" placeholder="Cantidad" onkeypress="return valideKey(event);">
+                <input type="number" placeholder="Cantidad" onkeypress="valideKey(event);">
             </form>
             <div class="Boton2">
                 <button onclick="aniadirElementoALista('AniadeUnaTarjeta'); reproducirClick();">Añadir nueva tarjeta</button>
@@ -512,7 +512,7 @@
             <h3>Editar una tarjeta de débito</h3>
             <form>
                 <input type="text" placeholder="Título tarjeta de débito">
-                <input type="number" placeholder="Cantidad" onkeypress="return valideKey(event);">
+                <input type="number" placeholder="Cantidad" onkeypress="valideKey(event);">
             </form>
             <div class="Boton2">
                 <button onclick="editaElementoEnLista('EditaUnaTarjeta'); reproducirClick();">Editar tarjeta</button>
@@ -525,7 +525,7 @@
             <h3>Añadir nueva deuda</h3>
             <form>
                 <input type="text" placeholder="Título deuda">
-                <input type="number" placeholder="Cantidad" onkeypress="return valideKey(event);">
+                <input type="number" placeholder="Cantidad" onkeypress="valideKey(event);">
             </form>
             <div class="Boton2">
                 <button onclick="aniadirElementoALista('AniadeUnaDeuda'); reproducirClick();">Añadir deuda</button>
@@ -538,7 +538,7 @@
             <h3>Editar una deuda</h3>
             <form>
                 <input type="text" placeholder="Título deuda">
-                <input type="number" placeholder="Cantidad" onkeypress="return valideKey(event);">
+                <input type="number" placeholder="Cantidad" onkeypress="valideKey(event);">
             </form>
             <div class="Boton2">
                 <button onclick="editaElementoEnLista('EditaUnaDeuda'); reproducirClick();">Editar Deuda</button>
@@ -551,7 +551,7 @@
             <h3>Añade nuevo deudor</h3>
             <form>
                 <input type="text" placeholder="Nombre deudor">
-                <input type="number" placeholder="Cantidad" onkeypress="return valideKey(event);">
+                <input type="number" placeholder="Cantidad" onkeypress="valideKey(event);">
             </form>
             <div class="Boton2">
                 <button onclick="aniadirElementoALista('AniadeUnDeudor'); reproducirClick();">Añade deudor</button>
@@ -564,7 +564,7 @@
             <h3>Edita un deudor</h3>
             <form>
                 <input type="text" placeholder="Nombre deudor">
-                <input type="number" placeholder="Cantidad" onkeypress="return valideKey(event);">
+                <input type="number" placeholder="Cantidad" onkeypress="valideKey(event);">
             </form>
             <div class="Boton2">
                 <button onclick="editaElementoEnLista('EditaUnDeudor'); reproducirClick();">Edita deudor</button>
@@ -577,7 +577,7 @@
             <h3>Añade un pendiente</h3>
             <form>
                 <input type="text" placeholder="Título pendiente">
-                <input type="number" placeholder="Cantidad" onkeypress="return valideKey(event);">
+                <input type="number" placeholder="Cantidad" onkeypress="valideKey(event);">
             </form>
             <div class="Boton2">
                 <button onclick="aniadirElementoALista('AniadeUnPendiente'); reproducirClick();">Añade pendiente</button>
@@ -590,7 +590,7 @@
             <h3>Edita un pendiente</h3>
             <form>
                 <input type="text" placeholder="Título pendiente">
-                <input type="number" placeholder="Cantidad" onkeypress="return valideKey(event);">
+                <input type="number" placeholder="Cantidad" onkeypress="valideKey(event);">
             </form>
             <div class="Boton2">
                 <button onclick="editaElementoEnLista('EditaUnPendiente'); reproducirClick();">Edita pendiente</button>
@@ -699,15 +699,16 @@
             <p>¿Ocurre Algo? Envíame un mensaje. <a target="_blank" href="https://www.facebook.com/micontroldegastos/"> Click Me!</a></p>
         </article>
     </section>
+    </div>
     <div class="publicidad" id="publicidad1" style="display: none;">
-        <a target="_blank" href="https://protectorincorporatehush.com/irhjc5u0vz?key=f8e4b952e3de3fbb0025cb85c171bf5d">Publicidad</a>
-    </div>
-    <div class="publicidad" id="publicidad2" style="display: none;">
-        <a target="_blank" href="https://www.videosprofitnetwork.com/watch.xml?key=d4cb2fed696acc50aca1e99ef3ae30e8">Publicidad</a>
-    </div>
-    <div class="publicidad" id="publicidad3" style="display: none;">
         <script async="async" data-cfasync="false" src="//protectorincorporatehush.com/915cff423b7011557d43151a9844db00/invoke.js"></script>
         <div id="container-915cff423b7011557d43151a9844db00"></div>
+    </div>
+    <div class="publicidad" id="publicidad2" style="display: none;">
+        <a target="_blank" href="https://protectorincorporatehush.com/irhjc5u0vz?key=f8e4b952e3de3fbb0025cb85c171bf5d">Publicity</a>
+    </div>
+    <div class="publicidad" id="publicidad3" style="display: none;">
+        <a target="_blank" href="https://www.videosprofitnetwork.com/watch.xml?key=d4cb2fed696acc50aca1e99ef3ae30e8">Publicity</a>
     </div>
     <div class="publicidad" id="publicidad4" style="display: none;">
         <script type="text/javascript">
