@@ -9,6 +9,7 @@
   top: 0px;
   background-color: rgb(1, 113, 189);
   z-index: 98;
+  /*   display: flex; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,6 +23,10 @@
   text-align: center;
   color: rgb(215, 255, 255);
   font-size: 20px;
+}
+#imagenInicioAplicacion #clickToStart p{
+  text-align: center;
+  width: 100%;
 }
 #imagenInicioAplicacion img{
     width: 150px;

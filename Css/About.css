@@ -1,27 +1,3 @@
-.About article{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.About h2, .About h3{
-    width: 100%;
-    text-align: center;
-    color: white;
-}
-.About h3{
-    margin-top: 20px;
-}
-.About p{
-    color: rgb(215, 255, 255);
-    width: 90%;
-    text-align: justify;
-}
-.mensajeExtra{
-    color: rgb(215, 255, 255);
-    text-align: center;
-}
 .About .ContenedorImagenAbout{
     width: 100%;
     display: flex;
@@ -38,19 +14,6 @@ box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
 
 @media screen and (min-width: 768px){
-    .About h2{
-    font-size: 30px;
-    }
-    .About h3{
-        font-size: 20px;
-    }
-    .About p{
-        width: 70%;
-        font-size: 20px;
-    }
-    .mensajeExtra p{
-        font-size: 20px;
-    }
     .About .ContenedorImagenAbout img{
         max-width: 30%;
     }

@@ -15,6 +15,45 @@ header{
 }
 a{
     color: rgb(255, 176, 6);
+    font-size: 15px;
+}
+article{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h2, h3{
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+h3{
+    margin-top: 20px;
+}
+p{
+    color: rgb(215, 255, 255);
+    width: 90%;
+    text-align: justify;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+.mensajeExtra{
+    color: rgb(215, 255, 255);
+    text-align: center;
+}
+.mensajeExtra p{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+ul{
+    width: 90%;
+    margin-bottom: 30px;
+}
+li{
+    color: rgb(215, 255, 255);
 }
 .publicidad{
     margin-top: 30px;
@@ -25,7 +64,7 @@ a{
     flex-wrap: wrap;
     z-index: 1!important;
 }
-.publicidad a,.publicidad iframe{
+.publicidad a, .publicidad iframe{
     z-index: 1!important;
 }
 .publicidad iframe:hover{
@@ -43,6 +82,28 @@ footer{
 }
 @media screen and (min-width: 768px){
     header{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    a{
+        font-size: 20px;
+    }
+    p{
+        width: 70%;
+        font-size: 20px;
+    }
+    ul{
+        width: 70%;
+    }
+    li{
+        font-size: 20px;
+    }
+    .mensajeExtra p{
         font-size: 20px;
     }
 }    

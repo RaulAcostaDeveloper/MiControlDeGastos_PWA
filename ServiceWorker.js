@@ -23,6 +23,7 @@ const ASSETS = [
     "./Css/Secciones/ElementoEnLista.css",
     "./Css/Secciones/SeccionesGlobal.css",
     "./Css/ImagenInicioAplicacion.css",
+    "./Css/footer.css",
 
     "./Imagenes/espaniol.png",
     "./Imagenes/ingles.png",
